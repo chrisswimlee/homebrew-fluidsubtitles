@@ -4,7 +4,7 @@ cask "fluidsubtitles" do
 
   url "https://github.com/chrisswimlee/fluidSubtitles/releases/download/v#{version}/fluidsubtitles-#{version}.zip"
   name "fluidSubtitles"
-  desc "Live captions for macOS. Each sentence appears when it is ready."
+  desc "Live captions. Each sentence appears when it is ready"
   homepage "https://github.com/chrisswimlee/fluidSubtitles"
 
   livecheck do
@@ -12,8 +12,8 @@ cask "fluidsubtitles" do
     strategy :github_latest
   end
 
-  depends_on macos: :sequoia
   depends_on arch: :arm64
+  depends_on macos: :sequoia
 
   app "fluidSubtitles.app"
 
